@@ -78,6 +78,11 @@ namespace SIGAUILauncher.Views
             Process.Start(this.atrRutaAbsoluta);
             this.Close();
         }
+
+        private void lblSitioCau_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start(this.lblSitioCau.Text);
+        }
         #region 2.7.1:Servicios de Navegación
         #endregion
         #region 2.7.2:Gestión Estado de Campos y Comandos IGU
