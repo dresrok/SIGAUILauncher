@@ -118,10 +118,28 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="AlcaldiaIbague" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\AlcaldiaIbague.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cemex" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Cemex.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Cortolima" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\Cortolima.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Facultad" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Facultad.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="FondoLoader" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\FondoLoader.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SIGAUI" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\SIGAUI.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ut" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Ut.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SanRafael" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\SanRafael.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

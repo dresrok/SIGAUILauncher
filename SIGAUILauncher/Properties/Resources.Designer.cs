@@ -63,6 +63,26 @@ namespace SIGAUILauncher.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap AlcaldiaIbague {
+            get {
+                object obj = ResourceManager.GetObject("AlcaldiaIbague", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Cemex {
+            get {
+                object obj = ResourceManager.GetObject("Cemex", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Cortolima {
             get {
                 object obj = ResourceManager.GetObject("Cortolima", resourceCulture);
@@ -73,9 +93,49 @@ namespace SIGAUILauncher.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Facultad {
+            get {
+                object obj = ResourceManager.GetObject("Facultad", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap FondoLoader {
             get {
                 object obj = ResourceManager.GetObject("FondoLoader", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SanRafael {
+            get {
+                object obj = ResourceManager.GetObject("SanRafael", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SIGAUI {
+            get {
+                object obj = ResourceManager.GetObject("SIGAUI", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Ut {
+            get {
+                object obj = ResourceManager.GetObject("Ut", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

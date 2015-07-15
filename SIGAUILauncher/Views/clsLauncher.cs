@@ -1,14 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
 using System.Diagnostics;
+using System.IO;
 
 namespace SIGAUILauncher.Views
 {
@@ -16,8 +10,7 @@ namespace SIGAUILauncher.Views
     {
         #region 1:Atributos
         #region 1.1:Propios y Derivables
-        private string atrRutaArchivoSigaui2014 = "D:\\LabSIG\\CAU\\Version_Organizada_Instalacion_Andres\\SIGAUI2014\\SIGAUI2014.mxd";
-        private string atrRutaArchivoSigaui2015 = "D:\\LabSIG\\CAU\\Version_Organizada_Instalacion_Andres\\SIGAUI2014\\SIGAUI2014.mxd";
+        private string atrRutaAbsoluta = "";
         #endregion
         #region 1.2:Asociativos
         #endregion
@@ -32,9 +25,14 @@ namespace SIGAUILauncher.Views
         {
             Thread t = new Thread(new ThreadStart(SplashStart));
             t.Start();
-            Thread.Sleep(5000);
+            Thread.Sleep(4500);
             InitializeComponent();
             t.Abort();
+            this.atrRutaAbsoluta = Program.getRutaAbsoluta();
+        }
+        private void clsLauncher_Load(object sender, EventArgs e)
+        {
+            this.Activate();
         }
         #endregion
         #region 2.2:Accesores
@@ -53,7 +51,7 @@ namespace SIGAUILauncher.Views
         public void SplashStart()
         {
             Application.Run(new clsLoader());
-        }
+        }        
         #region 2.4.1:Registradores
         #endregion
         #region 2.4.2:Actualizadores
@@ -74,6 +72,12 @@ namespace SIGAUILauncher.Views
         #region 2.6:Servicios de Consulta
         #endregion
         #region 2.7: Servicios de IGU
+        private void btnIniciarCompilado_Click(object sender, EventArgs e)
+        {
+            //MessageBox.Show(this.atrRutaAbsoluta);
+            Process.Start(this.atrRutaAbsoluta);
+            this.Close();
+        }
         #region 2.7.1:Servicios de Navegación
         #endregion
         #region 2.7.2:Gestión Estado de Campos y Comandos IGU
