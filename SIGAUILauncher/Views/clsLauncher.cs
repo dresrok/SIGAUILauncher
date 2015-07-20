@@ -27,8 +27,7 @@ namespace SIGAUILauncher.Views
             t.Start();
             Thread.Sleep(4500);
             InitializeComponent();
-            t.Abort();
-            this.atrRutaAbsoluta = Program.getRutaAbsoluta();
+            t.Abort();            
         }
         private void clsLauncher_Load(object sender, EventArgs e)
         {
@@ -72,17 +71,31 @@ namespace SIGAUILauncher.Views
         #region 2.6:Servicios de Consulta
         #endregion
         #region 2.7: Servicios de IGU
-        private void btnIniciarCompilado_Click(object sender, EventArgs e)
+        private void lblSitioCau_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            //MessageBox.Show(this.atrRutaAbsoluta);
+            Process.Start(this.lblSitioCau.Text);
+        }             
+
+        private void btnIniciarSigaui2014_Click(object sender, EventArgs e)
+        {
+            this.atrRutaAbsoluta = Program.getSigaui2014();
             Process.Start(this.atrRutaAbsoluta);
             this.Close();
         }
 
-        private void lblSitioCau_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void btnIniciarSigaui2015_Click(object sender, EventArgs e)
         {
-            Process.Start(this.lblSitioCau.Text);
+            this.atrRutaAbsoluta = Program.getSigaui2015();
+            Process.Start(this.atrRutaAbsoluta);
+            this.Close();
         }
+
+        private void btnIniciarSigauiFases_Click(object sender, EventArgs e)
+        {
+            this.atrRutaAbsoluta = Program.getSigauiFases();
+            Process.Start(this.atrRutaAbsoluta);
+            this.Close();
+        } 
         #region 2.7.1:Servicios de Navegación
         #endregion
         #region 2.7.2:Gestión Estado de Campos y Comandos IGU

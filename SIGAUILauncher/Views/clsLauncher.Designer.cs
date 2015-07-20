@@ -36,9 +36,11 @@
             this.pictureBoxCemex = new System.Windows.Forms.PictureBox();
             this.pictureBoxAlcaldia = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.btnIniciarCompilado = new System.Windows.Forms.Button();
+            this.btnIniciarSigauiFases = new System.Windows.Forms.Button();
             this.lblSitioCau = new System.Windows.Forms.LinkLabel();
             this.lblSitioWeb = new System.Windows.Forms.Label();
+            this.btnIniciarSigaui2014 = new System.Windows.Forms.Button();
+            this.btnIniciarSigaui2015 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCortolima)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUt)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFacultad)).BeginInit();
@@ -124,17 +126,17 @@
             this.pictureBox6.TabIndex = 7;
             this.pictureBox6.TabStop = false;
             // 
-            // btnIniciarCompilado
+            // btnIniciarSigauiFases
             // 
-            this.btnIniciarCompilado.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnIniciarCompilado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIniciarCompilado.Location = new System.Drawing.Point(533, 246);
-            this.btnIniciarCompilado.Name = "btnIniciarCompilado";
-            this.btnIniciarCompilado.Size = new System.Drawing.Size(171, 45);
-            this.btnIniciarCompilado.TabIndex = 8;
-            this.btnIniciarCompilado.Text = "SIGAUI Fases I-II";
-            this.btnIniciarCompilado.UseVisualStyleBackColor = true;
-            this.btnIniciarCompilado.Click += new System.EventHandler(this.btnIniciarCompilado_Click);
+            this.btnIniciarSigauiFases.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnIniciarSigauiFases.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIniciarSigauiFases.Location = new System.Drawing.Point(533, 305);
+            this.btnIniciarSigauiFases.Name = "btnIniciarSigauiFases";
+            this.btnIniciarSigauiFases.Size = new System.Drawing.Size(171, 40);
+            this.btnIniciarSigauiFases.TabIndex = 8;
+            this.btnIniciarSigauiFases.Text = "SIGAUI Fases I-II";
+            this.btnIniciarSigauiFases.UseVisualStyleBackColor = true;
+            this.btnIniciarSigauiFases.Click += new System.EventHandler(this.btnIniciarSigauiFases_Click);
             // 
             // lblSitioCau
             // 
@@ -161,6 +163,30 @@
             this.lblSitioWeb.TabIndex = 10;
             this.lblSitioWeb.Text = "Sitio Web:";
             // 
+            // btnIniciarSigaui2014
+            // 
+            this.btnIniciarSigaui2014.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnIniciarSigaui2014.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIniciarSigaui2014.Location = new System.Drawing.Point(533, 213);
+            this.btnIniciarSigaui2014.Name = "btnIniciarSigaui2014";
+            this.btnIniciarSigaui2014.Size = new System.Drawing.Size(171, 40);
+            this.btnIniciarSigaui2014.TabIndex = 11;
+            this.btnIniciarSigaui2014.Text = "SIGAUI 2014";
+            this.btnIniciarSigaui2014.UseVisualStyleBackColor = true;
+            this.btnIniciarSigaui2014.Click += new System.EventHandler(this.btnIniciarSigaui2014_Click);
+            // 
+            // btnIniciarSigaui2015
+            // 
+            this.btnIniciarSigaui2015.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnIniciarSigaui2015.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIniciarSigaui2015.Location = new System.Drawing.Point(533, 259);
+            this.btnIniciarSigaui2015.Name = "btnIniciarSigaui2015";
+            this.btnIniciarSigaui2015.Size = new System.Drawing.Size(171, 40);
+            this.btnIniciarSigaui2015.TabIndex = 12;
+            this.btnIniciarSigaui2015.Text = "SIGAUI 2015";
+            this.btnIniciarSigaui2015.UseVisualStyleBackColor = true;
+            this.btnIniciarSigaui2015.Click += new System.EventHandler(this.btnIniciarSigaui2015_Click);
+            // 
             // clsLauncher
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -169,9 +195,11 @@
             this.BackgroundImage = global::SIGAUILauncher.Properties.Resources.FondoLoader;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(784, 582);
+            this.Controls.Add(this.btnIniciarSigaui2015);
+            this.Controls.Add(this.btnIniciarSigaui2014);
             this.Controls.Add(this.lblSitioWeb);
             this.Controls.Add(this.lblSitioCau);
-            this.Controls.Add(this.btnIniciarCompilado);
+            this.Controls.Add(this.btnIniciarSigauiFases);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBoxAlcaldia);
             this.Controls.Add(this.pictureBoxCemex);
@@ -207,9 +235,11 @@
         private System.Windows.Forms.PictureBox pictureBoxCemex;
         private System.Windows.Forms.PictureBox pictureBoxAlcaldia;
         private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.Button btnIniciarCompilado;
+        private System.Windows.Forms.Button btnIniciarSigauiFases;
         private System.Windows.Forms.LinkLabel lblSitioCau;
         private System.Windows.Forms.Label lblSitioWeb;
+        private System.Windows.Forms.Button btnIniciarSigaui2014;
+        private System.Windows.Forms.Button btnIniciarSigaui2015;
 
     }
 }

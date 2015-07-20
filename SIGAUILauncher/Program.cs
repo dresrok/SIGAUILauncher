@@ -12,10 +12,11 @@ namespace SIGAUILauncher
     static class Program
     {
         #region 1:Atributos
-        #region 1.1:Propios y Derivables
-        private static string atrRutaAbsoluta = "";
-        private static string atrRutaProyecto = "";
-        private static string atrRutaArchivoFaseI_II = "Cau\\SIGAUI_2014-2015\\SIGAUI_Fase_I-II.mxd";
+        private const string RUTA_ARCHIVO_SIGAUI2014 = "Cau\\SIGAUI2014\\SIGAUI2014.mxd";
+        private const string RUTA_ARCHIVO_SIGAUI2015 = "Cau\\SIGAUI_2015\\SIGAUI2015.mxd";
+        private const string RUTA_ARCHIVO_SIGAUI_FASE_I_II = "Cau\\SIGAUI_2014-2015\\SIGAUI_Fase_I-II.mxd";
+        #region 1.1:Propios y Derivables        
+        private static string atrRutaProyecto = "";        
         #endregion
         #region 1.2:Asociativos
         #endregion
@@ -33,8 +34,7 @@ namespace SIGAUILauncher
         static void Main()
         {
             DirectoryInfo myDirectory = new DirectoryInfo(Environment.CurrentDirectory);
-            Program.atrRutaProyecto = myDirectory.Parent.Parent.FullName;
-            Program.atrRutaAbsoluta = Program.atrRutaProyecto + Path.DirectorySeparatorChar + Program.atrRutaArchivoFaseI_II;
+            Program.atrRutaProyecto = myDirectory.Parent.Parent.FullName;            
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
@@ -42,10 +42,18 @@ namespace SIGAUILauncher
         }
         #endregion
         #region 2.2:Accesores
-        #region 2.2.1:Accesores De Atributo Propio y Derivable
-        public static string getRutaAbsoluta()
+        #region 2.2.1:Accesores De Atributo Propio y Derivable    
+        public static string getSigaui2014()
         {
-            return Program.atrRutaAbsoluta;
+            return Program.atrRutaProyecto + Path.DirectorySeparatorChar + Program.RUTA_ARCHIVO_SIGAUI2014;            
+        }
+        public static string getSigaui2015()
+        {
+            return Program.atrRutaProyecto + Path.DirectorySeparatorChar + Program.RUTA_ARCHIVO_SIGAUI2015;
+        }
+        public static string getSigauiFases()
+        {
+            return Program.atrRutaProyecto + Path.DirectorySeparatorChar + Program.RUTA_ARCHIVO_SIGAUI_FASE_I_II;
         }
         #endregion
         #region 2.2.2:Accesores De Atributo Asociativo
